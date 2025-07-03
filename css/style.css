@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Tahoma, sans-serif;
+    transition: transform 0.3s ease
+}
+
+h3 {font-size: 2em;}
+h5{font-size: 1.5em;}
+p{font-size: 1em;}
+
+  /*ENCABEZADO*/
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        height: 312px;
+        
+    }
+
+    .logo{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(242, 239, 239, 0.805),
+        rgba(255, 255, 255, 0.892)
+    )
+    ,url(/img/fonf.jpg);
+}
+
+   .logo img{
+     height: 100%;
+    
+   }
+
+    .menu{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        background-color:rgba(151, 151, 242, 0.5);
+        border: 2px solid black;
+        width: 100vw;
+        height: auto;
+    }
+
+    .li{
+       margin: 0px;
+       padding: 10px;
+       list-style-type: none;
+    }
+
+/*FIN ENCABEZADO*/
+
+
+main{
+    padding: 5px;
+    margin: auto;
+    background-image: linear-gradient(
+        0deg,
+        rgba(242, 239, 239, 0.805),
+        rgba(255, 255, 255, 0.892)
+    )
+    ,url(/img/fonf.jpg);
+   
+    background-repeat: repeat;
+    
+}
+
+.titulo{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/img/perro4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: rgb(255, 255, 255);
+    border-radius: 5pc;
+}
+
+.titulo h1{
+    text-align: center;
+    font-size: 3em;
+} 
+
+/*fin titulo*/
+
+.nosotros{
+  padding: 200px 5px;
+  text-align: center;
+}
+
+.artnosotros{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
+}
+
+.fotonosotros{
+    width: 50vw;
+}
+article{
+    padding: 20px;
+    background:rgba(151, 151, 242, 0.5);
+}
+
+/* BARRIOSQ*/
+.zonas{
+  text-align: center;
+  height: 90vh;
+}
+
+.ulbarrio{
+    padding: 20px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: space-evenly;
+}
+
+.li1{
+    list-style-type: none;
+    padding: 15px 5px;
+}
+
+.li2{
+    list-style-type: none;
+    padding: 15px 5px;
+}
+
+.li3{
+    list-style-type: none;
+    padding: 15px 5px;
+}
+
+.ulbarrio li{
+    margin: 5px;
+}
+
+/*FIN BARRIOSQ*/
+/*perfiles de los integrantes */
+
+.into2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.integrantes{
+    text-align: center;
+}
+
+ /*perfiles DERECHA*/
+.art1{
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   align-content: center;
+   padding: 60px 50px;
+   background-color: rgb(151, 151, 242);
+   }
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 60%;
+    text-align: center;
+}
+
+.divfoto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+}
+
+.foto{
+    max-width: 100%;
+    border-radius: 100em;
+    display: flex;
+    justify-content: flex-end;
+    Overflow: hidden;
+}
+
+.perfil p{
+    margin: 10px;
+}
+/*PERFILEs IZQUIERDA*/
+
+.art2{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   align-content: center;
+   padding: 60px 50px;
+   }
+
+/*fin perfiles de los integrantes */
+
+footer{
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+/*Estilos para pag min 780px*/
+@media screen and (min-width: 550px) and (max-width:800px){
+
+
+    #int article{
+   width: 400px;
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+   align-content: center;
+   padding: 50px 10px;
+   background-color: rgb(151, 151, 242);
+   margin: auto;
+   margin-top: 50px;
+   border-radius: 50px;
+}
+
+.divfoto{
+    margin-bottom: 20px;
+}
+
+.perfil p {
+    margin: 0px;
+}
+}
+
+
+/*Estilos para pag min 780px*/
+@media screen and (min-width: 801px){
+
+#int{
+width: 100%;
+margin: 10px;
+padding: 0px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+
+#int article{
+  margin: 20px;
+  width: 400px;
+   display: flex;
+   flex-direction: column-reverse;
+   padding: 30px;
+   padding-bottom: 50px;
+   background-color: rgb(151, 151, 242);
+   border-radius: 50px;
+}
+
+.divfoto{
+    margin-bottom: 20px;
+}
+
+.perfil p {
+    margin: 0px;
+}
+
+}
